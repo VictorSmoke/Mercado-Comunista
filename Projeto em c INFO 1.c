@@ -6,16 +6,18 @@
 #include <conio.h>
 #include <ctype.h>
 
+	int som(){
+		
+		Beep(880, 100);	
+		
+	}
 
-
-	int main()
-	
-{
+	int main(){
 
 	setlocale(LC_ALL, "Portuguese");
 	SetConsoleTitle("MERCADO DO COMUNISTA");
-	
-//declaração de variaveis.
+
+//declaraï¿½ï¿½o de variaveis.
 
 	int R=0;
 	int N=0,N2,N3,N5;
@@ -41,19 +43,19 @@
 	
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 70 );
 
-    N=0,N2=0,N3=0,N5=0;
+    N=0, N2=0, N3=0, N5=0;
 
 	printf("##################################################################\n\n");
 	printf(" #######                MERCADO COMUNISTA                 #######\n\n");
 	printf("##################################################################\n\n");
 	
-	printf("Digite a opção desejada:\n\n");
+	printf("Digite a opï¿½ï¿½o desejada:\n\n");
 	printf("1 - Comprar\n\n");
 	printf("2 - Listar produtos\n\n");
 	printf("3 - Sair\n\n");
 	printf("4 - Verificar compras realizadas\n\n");
 
-//condições de controle.
+//condiï¿½ï¿½es de controle.
 
 	{
 	do 
@@ -68,7 +70,7 @@
 			printf ("%c", C);
 	
 		}
-	 
+
 		else if (C==8&&N)	
 		
 		{
@@ -89,19 +91,19 @@
 		som();
 		N=0;
 		system("cls");
-		printf("NÚMERO INVÁLIDO, APERTE [ENTER] PARA VOLTAR!\n");
+		printf("Nï¿½MERO INVï¿½LIDO, APERTE [ENTER] PARA VOLTAR!\n");
 		getch();
 		
 	}
 	
-//estabelecendo condições.
+//estabelecendo condiï¿½ï¿½es.
 
 	if(OP==1){
 	
 
 	N=0;
 	system("cls");
-	printf("Digite o código do produto:\n\n");
+	printf("Digite o cï¿½digo do produto:\n\n");
 	
 	do 
 	{
@@ -133,7 +135,7 @@
 	
 	if(C2>12 || C2<1){
 		system("cls");
-		printf("DIGITE UM CÓDIGO VÁLIDO!\n\n");
+		printf("DIGITE UM Cï¿½DIGO Vï¿½LIDO!\n\n");
 		getch();
 	} else{
 	
@@ -174,7 +176,7 @@
 	
 	if(C2==1){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M1++;
 		Q1+=Q;
 		P=Q*P1;
@@ -182,14 +184,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Hamburguer.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 
 	if(C2==2){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M2++;
 		Q2+=Q;
 		P=Q*P2;
@@ -197,7 +199,7 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Refrigerente.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	
@@ -205,7 +207,7 @@
 
 	if(C2==3){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M3++;
 		Q3+=Q;
 		P=Q*P3;
@@ -213,7 +215,7 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Coxinha.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	
@@ -221,7 +223,7 @@
 	
 	if(C2==4){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M4++;
 		Q4+=Q;
 		P=Q*P4;
@@ -229,14 +231,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Batata frita.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==5){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M5++;
 		Q5+=Q;
 		P=Q*P5;
@@ -244,14 +246,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Picanha.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 
 	if(C2==6){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M6++;
 		Q6+=Q;
 		P=Q*P6;
@@ -259,14 +261,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Cupim.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==7){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M7++;
 		Q7+=Q;
 		P=Q*P8;
@@ -274,29 +276,29 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Mortadela.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==8){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M8++;
 		Q8+=Q;
 		P=Q*P7;
 		N=0;
 		PF+=P;
 		som();
-		printf("produto escolhido: Coxão mole.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("produto escolhido: Coxï¿½o mole.\n\n");
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==9){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M9++;
 		Q9+=Q;
 		P=Q*P9;
@@ -304,14 +306,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Cenoura.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==10){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M10++;
 		Q10+=Q;
 		P=Q*P10;
@@ -319,14 +321,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Jaca.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==11){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M11++;
 		Q11+=Q;
 		P=Q*P11;
@@ -334,14 +336,14 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Macaxeira.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
 	
 	if(C2==12){
 		
-		//cálculos.
+		//cï¿½lculos.
 		M12++;
 		Q12+=Q;
 		P=Q*P12;
@@ -349,7 +351,7 @@
 		PF+=P;
 		som();
 		printf("produto escolhido: Berinjela.\n\n");
-		printf("Valor à pagar: R$%.2f.\n\n",P);
+		printf("Valor ï¿½ pagar: R$%.2f.\n\n",P);
 		printf("Aperte [ENTER] para voltar\n\n");
 		getch();
 	}
@@ -364,20 +366,20 @@
 	system("cls");
 	printf("+++++++    LISTA DE PRODUTOS   +++++++\n\n");
 	printf("\t   *FAST FOOD*\n");	
-	printf("Valor do Hamburguer é: %.2f. Cód:1 \n\n", P1);
-	printf("Valor da Coxinha é: %.2f. Cód:2 \n\n", P2);
-	printf("Valor do Refrigerante é: %.2f. Cód:3 \n\n", P3);
-	printf("Valor da Batata frita é: %.2f. Cód:4 \n\n", P4);
-	printf("\t    *Açougue*\n");
-	printf("Valor da Picanha é: %.2f Cód:5 \n\n", P5);
-	printf("Valor do Cupim é: %.2f. Cód:6 \n\n", P6);
-	printf("Valor da Mortadela é: %.2f. Cód:7 \n\n", P8);
-	printf("Valor do coxão mole é: %.2f. Cód:8 \n\n", P7);
+	printf("Valor do Hamburguer ï¿½: %.2f. Cï¿½d:1 \n\n", P1);
+	printf("Valor da Coxinha ï¿½: %.2f. Cï¿½d:2 \n\n", P2);
+	printf("Valor do Refrigerante ï¿½: %.2f. Cï¿½d:3 \n\n", P3);
+	printf("Valor da Batata frita ï¿½: %.2f. Cï¿½d:4 \n\n", P4);
+	printf("\t    *Aï¿½ougue*\n");
+	printf("Valor da Picanha ï¿½: %.2f Cï¿½d:5 \n\n", P5);
+	printf("Valor do Cupim ï¿½: %.2f. Cï¿½d:6 \n\n", P6);
+	printf("Valor da Mortadela ï¿½: %.2f. Cï¿½d:7 \n\n", P8);
+	printf("Valor do coxï¿½o mole ï¿½: %.2f. Cï¿½d:8 \n\n", P7);
 	printf("\t    *Ortifrute*\n");
-	printf("Valor da Cenoura é: %.2f Cód:9 \n\n", P9);
-	printf("Valor da Jaca é: %.2f. Cód:10 \n\n", P10);
-	printf("Valor da Macaxeira é: %.2f. Cód:11 \n\n", P11);
-	printf("Valor da Berinjela é: %.2f. Cód:12 \n\n", P12);	
+	printf("Valor da Cenoura ï¿½: %.2f Cï¿½d:9 \n\n", P9);
+	printf("Valor da Jaca ï¿½: %.2f. Cï¿½d:10 \n\n", P10);
+	printf("Valor da Macaxeira ï¿½: %.2f. Cï¿½d:11 \n\n", P11);
+	printf("Valor da Berinjela ï¿½: %.2f. Cï¿½d:12 \n\n", P12);	
 	printf("++++++++++++++++++++++++++++++++++++\n\n");
 	printf("Aperte [ENTER] para sair.\n\n");
 	getch();
@@ -423,7 +425,7 @@
 	}
 	
 	if(M8>0){
-		printf("Coxão mole: R$%.2f. Unidades:%d.\n\n",P7,Q8);
+		printf("Coxï¿½o mole: R$%.2f. Unidades:%d.\n\n",P7,Q8);
 	}
 	
 	if(M9>0){
@@ -473,8 +475,8 @@
 			while(C5!=13);
 		 	
 		 	dig5[N5]='\0';
-		 	 R = atoi(dig5);
-		 	 
+		 	R = atoi(dig5);
+		 	
 		 	if(R<1 || R>2){
 		 		
 		 		while(R<1 || R>2){
@@ -482,8 +484,7 @@
 		 		printf("Deseja voltar ao menu ou pretende retirar algum item? 1 PARA SAIR OU 2 PARA REMOVER.\n\n");
 		 		R=0;
 		 		N5=0;
-		 		do 
-	{
+	do{
 		som();
 		C5=getch();
 		if (isdigit(C5)!=0)
@@ -514,7 +515,7 @@
 	}
 		 	if(R==2){
 		 		system("cls");
-		 		printf("Digite o código do produto que deseja remover:\n\n");
+		 		printf("Digite o cï¿½digo do produto que deseja remover:\n\n");
 	
 	do 
 	{
@@ -546,7 +547,7 @@
 	
 	if(C2>12 || C2<1){
 		system("cls");
-		printf("DIGITE UM CÓDIGO VÁLIDO!\n\n");
+		printf("DIGITE UM Cï¿½DIGO Vï¿½LIDO!\n\n");
 		getch();
 	} 
 	
@@ -695,7 +696,7 @@
 	
 	som();
 	system("cls");
-	printf("EXECUÇÃO ENCERRADA, OBRIGADO POR COMPRAR CONOSCO!\n\n");	
+	printf("EXECUï¿½ï¿½O ENCERRADA, OBRIGADO POR COMPRAR CONOSCO!\n\n");	
 	printf("VALOR TOTAL DAS COMPRAS: %.2f.\n\n", PF);
 	
 	printf("NOTA:\n\n");
@@ -729,7 +730,7 @@
 	}
 	
 	if(M8>0){
-		printf("Coxão mole: R$%.2f. Unidades:%d.\n\n",P7,Q8);
+		printf("Coxï¿½o mole: R$%.2f. Unidades:%d.\n\n",P7,Q8);
 	}
 	
 	if(M9>0){
@@ -750,18 +751,6 @@
 	
 	
 	return 0;
+
 }
-
-
-	int som(){
-		
-	Beep(880, 100);	
-		
-		
-		
-		
-		
-		
-		
-	}
 
