@@ -6,6 +6,12 @@
 #include <conio.h>
 #include <ctype.h>
 
+int som(){
+		
+	Beep(880, 100);	
+
+}
+
 int main(){
 
 	setlocale(LC_ALL, "Portuguese");
@@ -14,12 +20,11 @@ int main(){
 //declara��o de variaveis.
 
 	int R=0;
-	int N=0,N2,N3,N5;
 	int i=0, Q=0, C2=0, OP=0;
 	int M1=0, M2=0, M3=0, M4=0, M5=0, M6=0, M7=0, M8=0, M9=0, M10=0, M11=0, M12=0;
 	int Q1=0, Q2=0, Q3=0, Q4=0, Q5=0, Q6=0, Q7=0, Q8=0, Q9=0, Q10=0, Q11=0, Q12=0;
 	int N=0, N2=0, N3=0, N5=0;
-	float P1=11.50, P2=10.00, P3=3.00, P4=2.00, P5=999.99, P6=36.99, P7=39.99, P8=6.00, P9=7.00, P10=6.00, P11=10.00, P12=12.00, P=0, PF=0, N1=0;	
+	float P1=11.50, P2=10.00, P3=3.00, P4=2.00, P5=999.99, P6=36.99, P7=39.99, P8=6.00, P9=7.00, P10=6.00, P11=10.00, P12=12.00, P=0, PF=0;	
 	char C, C3, C4, C5;
 	char dig[50],dig2[50],dig3[50],dig5[50];
 		
@@ -68,9 +73,9 @@ int main(){
 			}
 	
 		}while(C!=13);
-		 	
-		 	dig[N]='\0';
-		 	OP = atoi(dig);
+
+			dig[N]='\0';
+			OP = atoi(dig);
 	
 	
 		if(OP>4 || OP<1){
@@ -87,7 +92,6 @@ int main(){
 
 		if(OP==1){
 		
-
 			N=0;
 			system("cls");
 			printf("Digite o c�digo do produto:\n\n");
@@ -97,7 +101,7 @@ int main(){
 				som();
 				C3=getch();
 
-				if (isdigit(C3)!=0){
+				if(isdigit(C3)!=0){
 
 					dig2[N2] = C3;
 					N2++;
@@ -153,7 +157,7 @@ int main(){
 					dig3[N3]='\0';
 					Q = atoi(dig3);
 		
-				}
+			}
 		
 			system("cls");
 		
@@ -782,11 +786,5 @@ int main(){
 	
 	return 0;
 
-}
-
-int som(){
-		
-	Beep(880, 100);	
-		
 }
 
